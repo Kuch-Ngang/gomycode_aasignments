@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Unique Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .card:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .overlay-content {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover .overlay-content {
+            opacity: 1;
+        }
+        .bg-cover {
+            background-image: url('/sebastian-svenson-LpbyDENbQQg-unsplash.jpg'); /* Your background image URL */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-purple-900 to-blue-900 text-white font-sans">
+
+    <!-- Header Section -->
+    <header class="bg-transparent absolute top-0 left-0 right-0 z-10">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-6">
+            <div class="flex items-center">
+                <a class="text-3xl font-bold tracking-wide" href="#">Alex</a>
+            </div>
+            <nav class="flex flex-col md:flex-row items-center">
+                <a class="my-1 text-lg hover:text-gray-400 md:mx-4" href="#">Home</a>
+                <a class="my-1 text-lg hover:text-gray-400 md:mx-4" href="#">Projects</a>
+                <a class="my-1 text-lg hover:text-gray-400 md:mx-4" href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen flex items-center text-center">
+        <div class="container mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-4">Hi there, I'am Alex</h1>
+            <p class="text-lg md:text-xl mb-8">Discover my creative projects and skills</p>
+            <a href="#" class="bg-transparent hover:bg-white text-white font-semibold hover:text-black py-3 px-6 border border-white hover:border-transparent rounded transition duration-300 ease-in-out">Explore</a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-gray-900 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-center mb-12">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden relative card">
+                    <img src="/jackson-sophat-_t-l5FFH8VA-unsplash.jpg" alt="Skill Image" class="w-full">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3 class="text-xl font-semibold mb-2">HTML</h3>
+                            <p class="text-gray-300">Proficient in writing semantic and accessible HTML markup.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden relative card">
+                    <img src="/growtika-9WnjxT1NCoY-unsplash.jpg" alt="Skill Image" class="w-full">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3 class="text-xl font-semibold mb-2">CSS</h3>
+                            <p class="text-gray-300">Skilled in using CSS for styling and layout purposes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden relative card">
+                    <img src="/growtika-YOEHA0Ou8ZY-unsplash.jpg" alt="Skill Image" class="w-full">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3 class="text-xl font-semibold mb-2">JavaScript</h3>
+                            <p class="text-gray-300">Experience in building interactive web applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden relative card">
+                    <img src="/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg" alt="Skill Image" class="w-full">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3 class="text-xl font-semibold mb-2">React</h3>
+                            <p class="text-gray-300">Proficient in building dynamic web applications using React.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden relative card">
+                    <img src="/timothy-cuenat-NH0pmKaZeuk-unsplash.jpg" alt="Skill Image" class="w-full">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3 class="text-xl font-semibold mb-2">Node.js</h3>
+                            <p class="text-gray-300">Knowledgeable in server-side development with Node.js.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden relative card">
+                    <img src="/rubaitul-azad-cijiWIwsMB8-unsplash.jpg" alt="Skill Image" class="w-full">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3 class="text-xl font-semibold mb-2">MongoDB</h3>
+                            <p class="text-gray-300">Familiar with NoSQL databases, especially MongoDB.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more skills cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-center mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden relative card">
+                    <img src="/carlos-muza-hpjSkU2UYSU-unsplash.jpg" alt="Project Image" class="w-full">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                            <p class="text-gray-300">Description of Project 1 goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden relative card">
+                    <img src="/stephen-dawson-qwtCeJ5cLYs-unsplash.jpg" alt="Project Image" class="w-full">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                            <p class="text-gray-300">Description of Project 2 goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden relative card">
+                    <img src="/tran-mau-tri-tam-QwAL909kTiY-unsplash.jpg" alt="Project Image" class="w-full">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+                            <p class="text-gray-300">Description of Project 3 goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="bg-gray-800 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-semibold text-center mb-12">Contact Me</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-6">
+                    <input type="text" id="name" name="name" placeholder="Your Name"
+                        class="bg-gray-700 appearance-none border-2 border-gray-700 rounded w-full py-3 px-4 text-white leading-tight focus:outline-none focus:bg-gray-600">
+                </div>
+                <div class="mb-6">
+                    <input type="email" id="email" name="email" placeholder="Your Email"
+                        class="bg-gray-700 appearance-none border-2 border-gray-700 rounded w-full py-3 px-4 text-white leading-tight focus:outline-none focus:bg-gray-600">
+                </div>
+                <div class="mb-6">
+                    <textarea id="message" name="message" placeholder="Your Message"
+                        class="bg-gray-700 appearance-none border-2 border-gray-700 rounded w-full py-3 px-4 text-white leading-tight focus:outline-none focus:bg-gray-600"></textarea>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="bg-gradient-to-r from-purple-500 to-blue-500 hover:bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-10">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div>
+                <p>&copy; 2024 Portfolio. All Rights Reserved.</p>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
